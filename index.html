@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Color</title>
+</head>
+<body>
+
+    <div class="container-md">
+
+        <h1>Hello, World!</h1>
+        <div class="cBtn">
+            <button type="button" onclick="mixColor()">Random Color</button>
+            <button type="button">Generate  RGB!</button>
+        </div>
+        <div class="rangeContainer row" >
+            <p>Select Your Own Color!</p>
+            <div id="redRange" class="col">
+                <input type="range" name="red" min="0" max="255" class="form-range" id="customRange1">
+                <p>Red (<span id="numberRed"></span>)</p>
+            </div>
+            <div id="greenRange" class="col">
+                <input type="range" name="green" min="0" max="255" class="form-range" id="customRange1">
+                <p>Green (<span id="numberGreen"></span>)</p>
+            </div>
+            <div id="blueRange" class="col">
+                <input type="range" name="blue" min="0" max="255" class="form-range" id="customRange1">
+                <p>Blue (<span id="numberBlue"></span>)</p>
+            </div>
+
+
+        </div>
+    
+    </div>
+    <!-- <button type="button">Mix The RGB</button> -->
+    <script src="data.js"></script>
+</body>
+</html>
